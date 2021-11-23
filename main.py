@@ -72,8 +72,6 @@ def restart(context: CallbackContext) -> None:
     p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
 
-
-
 def init(context: CallbackContext) -> None:
     context.job_queue.run_once(restart)
 
